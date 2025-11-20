@@ -53,8 +53,7 @@ jobs:
         mkdir -p results
 
         locust -f locustfile.py \
-        --host http://localhost:8089 \
-
+        
 
           --headless \
 
@@ -63,6 +62,8 @@ jobs:
           --spawn-rate 1 \
 
           --run-time 30s \
+          
+          --host http://localhost:8089 \
 
           --loglevel INFO \
 
