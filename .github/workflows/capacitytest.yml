@@ -53,7 +53,7 @@ jobs:
         mkdir -p results
 
         locust -f locustfile.py \
-        --host http://localhost:8000 \
+        --host http://localhost:8089 \
 
 
           --headless \
